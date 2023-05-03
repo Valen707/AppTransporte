@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UbCLiente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#EEFF9C22"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context=".Taxi">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/taxi" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Dirección Actual del Cliente." />
+
+    <EditText
+        android:id="@+id/CampCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dirección Destino" />
+
+    <EditText
+        android:id="@+id/CampDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+    <CheckBox
+        android:id="@+id/Linea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pago en linea." />
+
+    <CheckBox
+        android:id="@+id/Persona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pago en Persona." />
+
+
+    <RadioButton
+        android:id="@+id/RadioAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar Terminos y Condiciones." />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:onClick="confirmar"
+        android:text="Confirmar" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:onClick="volver"
+        android:text="Volver" />
+
+
+</LinearLayout>

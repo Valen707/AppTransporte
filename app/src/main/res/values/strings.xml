@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppTransporte</string>
+    <string name="btnTaxi">Taxi</string>
+    <string name="btnBus">Bus</string>
+</resources>
