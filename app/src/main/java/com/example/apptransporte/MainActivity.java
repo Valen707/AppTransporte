@@ -27,4 +27,11 @@ public class MainActivity extends AppCompatActivity {
         ir.addFlags(ir.FLAG_ACTIVITY_CLEAR_TASK | ir.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(ir);
     }
+
+    public void navegarApi(View n){
+        Intent ir = new Intent(this, API.class);
+
+        ir.addFlags(ir.FLAG_ACTIVITY_CLEAR_TASK | ir.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(ir);
+    }
 }
