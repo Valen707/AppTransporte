@@ -20,7 +20,7 @@ public class API extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inicializar la cola de solicitudes
+        // Inicializa la cola de solicitudes
         requestQueue = Volley.newRequestQueue(this);
 
         // Hacer una solicitud HTTP GET a una API de ejemplo
