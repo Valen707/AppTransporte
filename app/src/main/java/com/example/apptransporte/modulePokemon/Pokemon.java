@@ -33,7 +33,7 @@ public class Pokemon extends AppCompatActivity {
                 consultarApi rg = new consultarApi();
                 try {
                     rg.respuesta(txtConsulta.getText().toString());
-                    muestraToast("Prosesando...");
+                    muestraToast("Procesando...");
                     final Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {
                         @Override
