@@ -26,6 +26,15 @@
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="386dp" />
 
+    <Button
+        android:id="@+id/btnEsperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperar"
+        android:onClick="Esperar"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="386dp" />
+
 
 
 </LinearLayout>

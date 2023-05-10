@@ -27,4 +27,7 @@ public class Bus extends AppCompatActivity {
         startActivity(ir);
 
     }
+
+    public static class ModeloRetorno {
+    }
 }
