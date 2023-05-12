@@ -1,4 +1,4 @@
-package com.example.apptransporte;
+package com.example.apptransporte.transporte;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,10 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.example.apptransporte.R;
+import com.example.apptransporte.transporte.ConfirmacionTaxi;
+import com.example.apptransporte.transporte.MainActivity;
 
 public class Taxi extends AppCompatActivity {
     EditText CampClient;

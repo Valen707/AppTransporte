@@ -1,4 +1,4 @@
-package com.example.apptransporte;
+package com.example.apptransporte.transporte;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.apptransporte.R;
 import com.example.apptransporte.modulePokemon.Pokemon;
 
 

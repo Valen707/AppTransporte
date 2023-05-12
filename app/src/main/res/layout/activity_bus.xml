@@ -8,7 +8,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:background="#C3058BF4"
-    tools:context=".Bus">
+    tools:context=".transporte.Bus">
 
     <ImageView
         android:id="@+id/imageView2"

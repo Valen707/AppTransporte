@@ -9,7 +9,7 @@
     android:background="#EEFF9C22"
     android:gravity="center|center_vertical"
     android:orientation="vertical"
-    tools:context=".Taxi">
+    tools:context=".transporte.Taxi">
 
     <ImageView
         android:id="@+id/imageView"

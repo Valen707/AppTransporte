@@ -8,7 +8,7 @@
     android:background="#EEFF9C22"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ConfirmacionTaxi">
+    tools:context=".transporte.ConfirmacionTaxi">
 
     <TextView
         android:id="@+id/DirrecionCliente"

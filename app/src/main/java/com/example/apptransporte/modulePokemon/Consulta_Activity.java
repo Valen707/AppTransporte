@@ -10,8 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.apptransporte.Bus;
-import com.example.apptransporte.MainActivity;
 import com.example.apptransporte.R;
 import com.squareup.picasso.Picasso;
 

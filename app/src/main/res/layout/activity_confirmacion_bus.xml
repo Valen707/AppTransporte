@@ -8,7 +8,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:background="#C3058BF4"
-    tools:context=".ConfirmacionBus">
+    tools:context=".transporte.ConfirmacionBus">
 
 
     <TextView

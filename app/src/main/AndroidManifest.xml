@@ -13,26 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppTransporte"
         tools:targetApi="31">
-
-        <activity android:name=".modulePokemon.Consulta_Activity"/>
-
+        <activity
+            android:name=".login.RegistrarUsusario"
+            android:exported="false" />
+        <activity
+            android:name=".transporte.MainActivity"
+            android:exported="true" />
+        <activity android:name=".modulePokemon.Consulta_Activity" />
         <activity
             android:name=".modulePokemon.Pokemon"
             android:exported="false" />
         <activity
-            android:name=".ConfirmacionBus"
+            android:name=".transporte.ConfirmacionBus"
             android:exported="false" />
         <activity
-            android:name=".ConfirmacionTaxi"
+            android:name=".transporte.ConfirmacionTaxi"
             android:exported="false" />
         <activity
-            android:name=".Taxi"
+            android:name=".transporte.Taxi"
             android:exported="false" />
         <activity
-            android:name=".Bus"
+            android:name=".transporte.Bus"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.LoginUsuario"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

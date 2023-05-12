@@ -1,12 +1,14 @@
-package com.example.apptransporte;
+package com.example.apptransporte.transporte;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.example.apptransporte.R;
+
 import java.util.Random;
 
 public class ConfirmacionTaxi extends AppCompatActivity {
