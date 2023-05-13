@@ -33,13 +33,13 @@
 
 
         <TextView
-            android:id="@+id/textUsuario"
+            android:id="@+id/textCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Usuario:" />
+            android:text="Correo:" />
 
         <EditText
-            android:id="@+id/CampUser"
+            android:id="@+id/CampCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
