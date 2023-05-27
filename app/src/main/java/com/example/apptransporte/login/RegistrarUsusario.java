@@ -15,6 +15,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrarUsusario extends AppCompatActivity {
 
@@ -27,6 +30,10 @@ public class RegistrarUsusario extends AppCompatActivity {
 
     private String Remail;
     private String Rcontraseña;
+
+    private FirebaseUser usuario;
+
+    String llave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,14 +65,23 @@ public class RegistrarUsusario extends AppCompatActivity {
     }
 
     public void VLogin(View n){
+
         Remail = email.getText().toString().trim();
         Rcontraseña = contraseña.getText().toString().trim();
 
+
         if(validar()){
+
+
             mAuth = FirebaseAuth.getInstance();
             mAuth.createUserWithEmailAndPassword(Remail, Rcontraseña)
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
+                            usuario = mAuth.getCurrentUser();
+                            FirebaseDatabase fd = FirebaseDatabase.getInstance();
+                            DatabaseReference dr = fd.getReference("Usuarios");
+                            dr.child(usuario.getUid()).setValue(new BaseDatos(Remail, Rcontraseña));
+
                             Toast.makeText(this, "Nuevo usuario creado.", Toast.LENGTH_SHORT).show();
                             Intent ir = new Intent(this, LoginUsuario.class);
                             ir.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -75,6 +91,11 @@ public class RegistrarUsusario extends AppCompatActivity {
                             Toast.makeText(this, "Falló la autenticación.", Toast.LENGTH_SHORT).show();
                         }
                     });
+
+
         }
+
     }
+
+
 }
